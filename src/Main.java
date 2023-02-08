@@ -5,21 +5,14 @@ public class Main {
         Scanner scanner=new Scanner(System.in);
         String areas= scanner.nextLine();
         Areas areas1=Areas.valueOf(areas.toUpperCase());
-        Areas chui=Areas.CHUI;
-        Areas batken=Areas.BATKEN;
-        Areas osh=Areas.OSH;
-        Areas talas=Areas.TALAS;
-        Areas naryn=Areas.NARYN;
-        Areas issykKul=Areas.ISSYK_KUL;
-        Areas jalalAbad=Areas.JALAl_ABAD;
         switch (areas1){
-            case CHUI -> System.out.println(chui);
-            case BATKEN -> System.out.println(batken);
-            case OSH -> System.out.println(osh);
-            case TALAS -> System.out.println(talas);
-            case NARYN -> System.out.println(naryn);
-            case ISSYK_KUL -> System.out.println(issykKul);
-            case JALAl_ABAD -> System.out.println(jalalAbad);
+            case CHUI -> System.out.println(Areas.CHUI);
+            case BATKEN -> System.out.println(Areas.BATKEN);
+            case OSH -> System.out.println(Areas.OSH);
+            case TALAS -> System.out.println(Areas.TALAS);
+            case NARYN -> System.out.println(Areas.NARYN);
+            case ISSYK_KUL -> System.out.println(Areas.ISSYK_KUL);
+            case JALAl_ABAD -> System.out.println(Areas.JALAl_ABAD);
             default -> System.out.println("нет такой области ");
 
         }
